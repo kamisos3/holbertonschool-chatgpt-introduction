@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-num = int(sys.argv) != 2:
+num = int(sys.argv[1])
 if num < 0:
     raise ValueError("Number must be non-negative.")
     except ValueError as e:
