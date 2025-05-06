@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-num = int(sys.argv[1])
-if num < 0:
-    raise ValueError("Number must be non-negative.")
-    except ValueError as e:
-    print(f"Error: {e}")
-    sys.exit(1)
+import sys
 
-    f = factorial(num)
-    print(f)
+def factorial(n):
+    result = 1
+    while n > 1:
+        result *= n
+    return result
+
+f = factorial(int(sys.argv[1]))
+print(f)
