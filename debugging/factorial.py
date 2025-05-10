@@ -18,6 +18,7 @@ if __name__ == "__main__":
         if num < 0:
             raise ValueError("Negative number")
         print(factorial(num))
-   except ValueError:
+ 
+    except ValueError:
         print("Error: Input must be a non-negative integer.")
         sys.exit(1)
